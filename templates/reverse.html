@@ -1,5 +1,11 @@
-<h1>User text has {{number_of_words}} words </h1>
-{{user_text}}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-<h1>Reversed text</h1>
-{{reversed_text}}
+<div class="container-fluid text-center">
+	<h1>User text has {{number_of_words}} words </h1>
+	<p class="alert-warning">{{user_text}}</p>
+
+	<h1>Reversed text</h1>
+	<p class="alert-success">{{reversed_text}}</p>
+
+	<a href="{% url 'home' %}" class="btn btn-primary">Home</a>
+</div>
